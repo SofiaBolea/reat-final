@@ -1,0 +1,56 @@
+.Flotantes{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    width: 160px;
+    height: 3rem;
+    border: 2px solid rgba(19, 18, 18, 0.555);
+    border-radius: 17px;
+    
+    padding: 0 20px 0 0;
+    box-shadow: 10px 12px 19px -7px rgba(186,48,186,1);
+   
+    margin: 15px;
+    
+ 
+    /* filter: grayscale(100%); */
+    
+}
+.Flotantes:hover{
+    cursor: pointer;
+    scale: 1.2;
+    /* transform: translateX(-15px); */
+    box-shadow: 10px 10px 14px -3px rgba(0,0,0,0.57);
+    transition: 0.3s;
+    background-color: violet;
+}
+.imagenflot{
+    width: 2rem;
+    height: 2rem;
+    margin-right: 10px;
+    margin-left: 10px;
+    filter: grayscale(100%);
+}
+
+.texto{
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+
+@media(max-width:750px) {
+    .Flotantes{
+        width: 90px;
+        height: 2rem;
+        /* margin-left: 5px; */
+    }
+
+    .imagenflot{
+        width: 0.9rem;
+        height: 0.9rem;
+        margin-right: 10px;
+        margin-left: 10px;
+        filter: grayscale(100%);
+    }
+
+}

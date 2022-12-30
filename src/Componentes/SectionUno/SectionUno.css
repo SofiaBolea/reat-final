@@ -1,0 +1,383 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+.contacto{
+    width: 100px;
+    border: 2px solid rgb(19, 18, 19);
+    background-color: #FFF0F5;
+    color:  rgb(19, 18, 19);
+    margin: 10px 0;
+   
+    font-weight: 600;
+}
+
+.contacto:hover{
+    scale: 1.2;
+    background-color: violet;
+    color:  rgb(19, 18, 19);
+    transition: ease-in-out 0.3s;
+}
+
+.About{
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin-bottom: 30px;
+
+}
+
+.sectionUnoCont{
+    padding: 50px  0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    height: 100vh;
+    background-color: violet;
+    flex-direction: column;
+    
+}
+.tarjetas{
+    width: 85%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.card{
+    position: relative;
+    width: 250px;
+    height: 400px;
+   
+    
+}
+
+.card .face{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.5s;
+    
+}
+
+.card .front{
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0px 0px 50px -7px rgba(255,255,255,1);
+    border: 1.5px solid rgb(12, 12, 12) ;
+}
+
+.card .front img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-color:#FFF0F5 ;
+}
+
+.img{
+    border-radius: 1px solid #FFF0F5 ;
+}
+
+.card .front h1{
+    font-size: 2rem;
+    font-weight: 900;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    border-top: 1.5px solid rgb(12, 12, 12) ;
+    height: 55px;
+    line-height: 45px;
+    color: rgb(31, 30, 31);
+    background-color:#FFF0F5 ;
+    text-align: center;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    align-items:center ;
+}
+
+.card .back{
+    transform: perspective(600px) rotateY(180deg) ;
+    background-color: #FFF0F5;
+    padding: 15px;
+    border: 1.5px solid rgb(12, 12, 12) ;
+    color: rgb(12, 12, 12);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 28px -7px rgba(255,255,255,1);
+    text-align: center;
+    padding: 30px;
+}
+
+.card .back h1{
+    font-size: 2rem;
+    font-weight: 900;
+    margin-top: 20px;
+    margin-bottom: 15px;
+   
+}
+
+.card .back p{
+    display: flex;
+    flex-direction: column;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.card:hover .front{
+    transform: perspective(600px) rotateY(180deg);
+
+}
+
+.card:hover .back{
+    transform: perspective(600px) rotateY(360deg);
+}
+
+@media (max-width:1000px) {
+    .About{
+        font-size: 2.5rem;
+        font-weight: 900;
+        margin-bottom: 30px;
+    
+    }
+    
+    .sectionUnoCont{
+        padding: 50px  0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width:100%;
+        height: 100vh;
+        background-color: violet;
+        flex-direction: column;
+        
+    }
+    .tarjetas{
+        width: 80%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .card{
+        position: relative;
+        width: 250px;
+        height: 400px;
+        margin:30px 0;
+    }
+    
+    .card .face{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        border-radius: 10px;
+        overflow: hidden;
+        transition: 0.5s;
+    
+    }
+    
+    .card .front{
+        transform: perspective(600px) rotateY(0deg);
+        box-shadow: 0px 0px 50px -7px rgba(255,255,255,1);
+        border: 1.5px solid rgb(12, 12, 12) ;
+    }
+    
+    .card .front img{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        background-color:#FFF0F5 ;
+    }
+    
+    .img{
+        border-radius: 1px solid #FFF0F5 ;
+    }
+    
+    .card .front h1{
+        font-size: 2rem;
+        font-weight: 900;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        border-top: 1.5px solid rgb(12, 12, 12) ;
+        height: 55px;
+        line-height: 45px;
+        color: rgb(31, 30, 31);
+        background-color:#FFF0F5 ;
+        text-align: center;
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        padding: 5px;
+        align-items:center ;
+    }
+    
+    .card .back{
+        transform: perspective(600px) rotateY(180deg) ;
+        background-color: #FFF0F5;
+        padding: 15px;
+        border: 1.5px solid rgb(12, 12, 12) ;
+        color: rgb(12, 12, 12);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0px 0px 28px -7px rgba(255,255,255,1);
+        text-align: center;
+        padding: 30px;
+    }
+    
+    .card .back h1{
+        font-size: 2rem;
+        font-weight: 900;
+        margin-top: 20px;
+        margin-bottom: 15px;
+        letter-spacing: 2px;
+    }
+    
+    .card .back p{
+        display: flex;
+        flex-direction: column;
+        font-size: 0.9rem;
+    }
+    
+    .card:hover .front{
+        transform: perspective(600px) rotateY(180deg);
+    
+    }
+    
+    .card:hover .back{
+        transform: perspective(600px) rotateY(360deg);
+    }
+}
+
+@media(max-width:650px){
+    .About{
+        font-size: 2.5rem;
+        font-weight: 900;
+        margin-bottom: 30px;
+    
+    }
+    
+    .sectionUnoCont{
+        padding: 50px  0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width:100%;
+        height: 150vh;
+        background-color: violet;
+        flex-direction: column;
+        
+    }
+    .tarjetas{
+        width: 80%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .card{
+        position: relative;
+        width: 250px;
+        height: 400px;
+        margin: 30px 0;
+    }
+    
+    .card .face{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        border-radius: 10px;
+        overflow: hidden;
+        transition: 0.5s;
+    
+    }
+    
+    .card .front{
+        transform: perspective(600px) rotateY(0deg);
+        box-shadow: 0px 0px 50px -7px rgba(255,255,255,1);
+        border: 1.5px solid rgb(12, 12, 12) ;
+    }
+    
+    .card .front img{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        background-color:#FFF0F5 ;
+    }
+    
+    .img{
+        border-radius: 1px solid #FFF0F5 ;
+    }
+    
+    .card .front h1{
+        font-size: 2rem;
+        font-weight: 900;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        border-top: 1.5px solid rgb(12, 12, 12) ;
+        height: 55px;
+        line-height: 45px;
+        color: rgb(31, 30, 31);
+        background-color:#FFF0F5 ;
+        text-align: center;
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        padding: 5px;
+        align-items:center ;
+    }
+    
+    .card .back{
+        transform: perspective(600px) rotateY(180deg) ;
+        background-color: #FFF0F5;
+        padding: 15px;
+        border: 1.5px solid rgb(12, 12, 12) ;
+        color: rgb(12, 12, 12);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0px 0px 28px -7px rgba(255,255,255,1);
+        text-align: center;
+        padding: 30px;
+    }
+    
+    .card .back h1{
+        font-size: 2rem;
+        font-weight: 900;
+        margin-top: 20px;
+        margin-bottom: 15px;
+        letter-spacing: 2px;
+    }
+    
+    .card .back p{
+        display: flex;
+        flex-direction: column;
+        font-size: 0.9rem;
+    }
+    
+    .card:hover .front{
+        transform: perspective(600px) rotateY(180deg);
+    
+    }
+    
+    .card:hover .back{
+        transform: perspective(600px) rotateY(360deg);
+    }
+}

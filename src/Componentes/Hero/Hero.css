@@ -1,0 +1,140 @@
+
+
+.ContainerHero{
+    height: 100vh;
+    width: 100%;
+    /* padding-top: 70px; */
+    margin: 15px 0;
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+}
+
+.Arriba{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.Izquierda{
+    text-align: center;
+    /* width: 40%; */
+}
+
+.imagenMia{
+    width: 350px;
+    border: 1px solid rgba(19, 18, 18, 0.555);
+    border-radius: 50%;
+    box-shadow: 5px 8px 22px -3px rgba(245,52,245,1);
+    border: 2px solid rgba(19, 18, 18, 0.555);
+   
+}
+
+.h1{
+    font-size: 4rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.h2{
+    letter-spacing: 2px;
+    font-size: 2rem;
+    font-weight: 600;
+}
+p{
+    letter-spacing: 2px;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.Derecha{
+    /* background-color: aqua; */
+    /* width: 60%; */
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: center;
+    /* flex-direction: row; */
+    /* padding: 0 50px; */
+    /* margin-left: 10px; */
+}
+
+.Flots{
+    width: 80%;
+    display: flex;
+    margin: 50px auto;
+    justify-content: center;
+   /* background-color: blueviolet; */
+}
+
+
+
+
+@media(max-width:1000px){
+    
+.ContainerHero{
+    height: 100vh;
+    width: 100%;
+    /* padding-top: 70px; */
+   margin: 15px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+}
+
+.imagenMia{
+    width: 350px;
+    border: 2px solid rgba(19, 18, 18, 0.555);
+    border-radius: 50%;
+    box-shadow: 5px 8px 22px -3px rgba(245,52,245,1);
+   margin-top: 30px;
+}
+
+.h1{
+    font-size: 3rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.h2{
+    letter-spacing: 2px;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+p{
+    letter-spacing: 2px;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.Arriba{
+    flex-direction: column;
+
+ }
+
+
+.Flots{
+    width: 80%;
+    display: flex;
+    /* flex-wrap: wrap; */
+    margin: 30px auto;
+}
+
+
+}
+
+@media(max-width: 450px){
+   
+.Flots{
+    width: 80%;
+    display: flex;
+    margin: 50px auto;
+    justify-content: center;
+   flex-wrap: wrap;
+}
+
+
+}
