@@ -1,0 +1,101 @@
+.contenedorFomulario{
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin: 0px auto;   
+   }
+   
+   label{
+       margin: 15px 0;
+   }
+   
+   input[type=text]{
+       padding: 10px;
+       border: 0;
+       border-radius: 10px;
+       box-shadow: 5px 8px 22px -3px rgba(245, 52, 245, 0.582);
+       /* derecha, abajo,difuminación, tamaño de la sombra */
+   }
+   
+   input:focus{
+       background-color: rgba(238, 130, 238, 0.26);
+       outline: none;
+       text-transform:capitalize;
+       /*El focus es para cuando ypo hago click en ese input, para mostrar que estamos ahi*/
+   }
+   
+   
+   textarea:focus{
+    background-color: rgba(238, 130, 238, 0.26);
+    outline: none;
+   }
+
+   textarea{
+       width:100%;
+       resize: vertical;
+       border-radius: 10px;
+       border: 0;
+       box-shadow: 5px 8px 22px -3px rgba(245, 52, 245, 0.582);
+       margin-bottom: 15px;
+   
+   }
+   .btnForm{
+       display: flex;
+       align-items: center;
+       justify-content: space-evenly;
+       z-index: 1;
+   }
+   
+   .btnForm button{
+      
+    width: 200px;
+    padding: 5px;
+    border: 2px solid violet;
+    background-color: #FFF0F5;
+    color:  rgb(19, 18, 19);
+    margin: 20px 10px;
+    border-radius: 30px;
+    font-weight: 600;
+}
+   
+   .btnForm button:hover{
+       scale: 1.2;
+       background-color: violet;
+       color:  rgb(19, 18, 19);
+       transition: ease-in-out 0.3s;
+   }
+   
+ @media (max-width:550px) {
+
+
+    .btnForm{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 1;
+        flex-wrap: wrap;
+    }
+    
+    
+    .btnForm button{
+      
+        width: 200px;
+        padding: 5px;
+        border: 2px solid rgb(19, 18, 19);
+        background-color: #FFF0F5;
+        color:  rgb(19, 18, 19);
+        margin: 10px 10px;
+        border-radius: 30px;
+        font-weight: 600;
+    }
+    
+ }

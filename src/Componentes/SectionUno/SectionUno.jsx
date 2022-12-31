@@ -4,11 +4,16 @@ import caricatura  from '../../assets/caricatura.png'
 import Compu from '../../assets/compu.jpg'
 import Idea from '../../assets/idea.jpg'
 import './SectionUno.css'
+import { motion } from 'framer-motion';
 
 const SectionUno = () => {
  return(
- <div className='sectionUnoCont'>
-    <h1 className='About'>Sobre Mi</h1>
+ <div className='sectionUnoCont' id='About'>
+    <motion.div 
+    initial={{opacity:0}}
+    animate={{opacity:1}}
+    transition={{duration:0.3}}
+    ><h1 className='About'>Sobre Mi</h1></motion.div>
    <div className='tarjetas'>
    <div className="card">
         <div className='face front'>

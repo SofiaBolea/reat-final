@@ -16,9 +16,10 @@ const NavBar = () => {
         
         <ul className='ulGrande'>
             <NavLink to="/" className='liGrande'>Inicio</NavLink>
-            <li className='liGrande'>Sobre Mi</li>
-            {/*<NavLink to="/Proyectos">*/}<li className='liGrande'>Proyectos</li>{/*</NavLink>*/}
+            <a href="#About"><li className='liGrande'>Sobre Mi</li></a>
+            <NavLink to="/Proyectos" className='liGrande'>Proyectos</NavLink>
             <NavLink to="/Contacto" className='liGrande'>Contacto</NavLink>
+
         </ul>
 
     

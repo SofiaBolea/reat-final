@@ -1,0 +1,43 @@
+.FooterCont{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 7rem;
+    background-color:violet;
+    border: 2px solid rgba(19, 18, 18, 0.555);
+}
+
+
+.p{
+    font-size: 0.8rem;
+}
+
+.textouno {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.textodos{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    margin:0 10px;
+}
+
+.textodos a{
+    margin: 0 10px;
+}
+
+.textodos a:hover{
+    color: white;
+}
+
+@media (max-width:650px) {
+    p{
+        font-size: 0.5rem;
+    }
+}

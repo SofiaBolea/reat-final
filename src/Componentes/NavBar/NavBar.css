@@ -40,7 +40,7 @@
     }
     
     .liGrande:hover{
-        border-top:2px solid black ;
+       color:white;
         padding: 4px 5px;
     }
     
@@ -48,6 +48,10 @@
         display: flex;
     }
     
+    .redes a:hover{
+        color: white;
+    }
+
     #social{
         margin-left: 15px;
     }

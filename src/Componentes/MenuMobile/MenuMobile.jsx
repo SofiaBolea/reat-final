@@ -42,8 +42,8 @@ const MenuMobile = () => {
 
             <ul className='ulMB'>
                 <NavLink to="/" className='liMB'>Inicio</NavLink>
-                <li className='liMB'>Sobre Mi</li>
-                {/*<NavLink to="/Proyectos">*/}<li className='liMB'>Proyectos</li>{/*</NavLink>*/}
+                <a href="#About"><li className='liMB'>Sobre Mi</li></a>
+                <NavLink to="/Proyectos" className='liMB'>Proyectos</NavLink>
                 <NavLink to="/Contacto" className='liMB'>Contacto</NavLink>
                 <div className='social'>
                 <a href="https://www.instagram.com/_sofibolea/"><i className="bi bi-instagram" id='social'></i></a>
